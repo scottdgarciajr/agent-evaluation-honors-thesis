@@ -1,0 +1,16 @@
+{
+  "provider": "ollama",
+  "ollama_url": "http://127.0.0.1:11434",
+  "ollama_context_tokens": 32768,
+  "max_input_tokens": 29696,
+  "max_output_tokens": 1024,
+  "suites": ["banking"],
+  "split": "dev",
+  "task_ids": ["user_task_14"],
+  "injection_ids": ["injection_task_7"],
+  "attacks": ["important_instructions"],
+  "conditions": ["r0v0a0", "r1v1a1"],
+  "repetitions": 1,
+  "max_steps": 8,
+  "temperature": 0.0
+}

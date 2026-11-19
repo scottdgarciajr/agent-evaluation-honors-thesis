@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What happened in my evaluation?</title><style>@@STYLE@@</style></head>
+<body><main>
+<header><p class="eyebrow">AGENT EVALUATION · RESULTS EXPLAINED</p><h1>What happened?</h1>
+<p class="intro">We compare an agent <strong>without protections</strong> with an agent <strong>with protections</strong>.
+The goal is to stop unwanted actions while still getting the user's work done.</p></header>
+<div class="notice">@@NOTICE@@</div>
+<div class="run-health"><div><strong>@@FINISHED@@</strong><span>test runs finished</span></div>
+<div><strong>@@FAILED@@</strong><span>runs failed or were interrupted</span></div>
+<div><strong>@@MODELS@@</strong><span>models with results</span></div>
+<p><strong>“Finished” does not mean “passed.”</strong><br>A run can finish while failing the user's task. The graphs below show the actual outcomes.</p></div>
+<section class="guide"><h2>Read the graphs this way</h2><div class="guide-grid">
+<div><span class="guide-number">1</span><strong>Useful work</strong><p>Did the agent do what the user asked?<br><b>More completed tasks is better.</b></p></div>
+<div><span class="guide-number">2</span><strong>Unwanted actions</strong><p>Did an injected instruction achieve the attacker's goal?<br><b>Fewer successful attacks is better.</b></p></div>
+<div><span class="guide-number">3</span><strong>The trade-off</strong><p>Stopping an attack is not enough if the agent stops doing useful work. Look at both outcomes.</p></div>
+</div></section>
+<div class="controls"><label>Show model <select id="model"><option value="">All models</option>@@MODEL_OPTIONS@@</select></label>
+<label>Compare against <select id="protection">@@CONDITION_OPTIONS@@</select></label></div>
+<p class="context">@@SOURCE_NOTE@@</p>
+<div id="comparisons">@@CARDS@@</div><p id="empty" hidden>No results for this selection. Choose another model or protection setup.</p>
+<section class="stories"><h2>See what actually happened</h2><p>Open a model report or a test below. You will see the user's request, the attacker's goal, and which actions ran or were blocked.</p>@@CASES@@</section>
+<details class="research"><summary>Research details and downloads</summary><p>Raw files retain the original benchmark scores and condition IDs.
+The graphical comparison uses matching cases where both versions finished. Failed or missing cases are not counted as successful defenses.</p>
+<p>r = tool restrictions; v = action validation; a = approval. A 1 means enabled. “With all protections” is r1v1a1.</p>@@EXPORTS@@</details>
+<noscript><p>Enable JavaScript to use the filters. The default graphs and case explanations remain visible.</p></noscript>
+</main><script>@@SCRIPT@@</script></body></html>

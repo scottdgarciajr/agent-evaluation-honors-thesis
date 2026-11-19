@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+runs/
+output/
+build/
+dist/
+
+# Local research inputs are not distributed with the public code.
+/Sources/
+/Planning Documents/
+/docs/source-inventory.json
+
+# Local OS/editor metadata.
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/

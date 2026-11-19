@@ -1,0 +1,10 @@
+{
+  "suites": ["workspace", "banking"],
+  "split": "dev",
+  "task_ids": ["user_task_8"],
+  "injection_ids": ["injection_task_0"],
+  "attacks": ["important_instructions", "tool_knowledge"],
+  "repetitions": 1,
+  "max_episodes": 54,
+  "max_cost_usd": 5.0
+}

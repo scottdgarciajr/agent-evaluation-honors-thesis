@@ -1,0 +1,5 @@
+{
+  "suites": ["workspace", "banking"],
+  "split": "test",
+  "repetitions": 3
+}

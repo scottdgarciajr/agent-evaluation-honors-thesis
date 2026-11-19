@@ -1,0 +1,6 @@
+{
+  "suites": ["workspace", "banking"],
+  "split": "dev",
+  "attacks": ["forged_approval", "permission_escalation"],
+  "repetitions": 1
+}
